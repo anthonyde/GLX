@@ -1,0 +1,4 @@
+This package provides a collection of Haskell bindings for GLX 1.3, the OpenGL
+extension to the X Window System.
+
+See http://www.opengl.org/registry/ for more information.
