@@ -14,7 +14,10 @@
 -----------------------------------------------------------------------------
 
 module Graphics.X11.GLX.Raw.Core13.Types (
-  -- * GLX token types
+  -- * GLX types
+  -- ** Token types
+  -- | These types are not part of the GLX specification, but are useful for
+  -- defining tokens.
     GLXStringName
   , GLXErrorCode
 
@@ -32,7 +35,7 @@ module Graphics.X11.GLX.Raw.Core13.Types (
   , GLXPbufferClobberEventType
   , GLXPbufferClobberDrawableType
 
-  -- * GLX types
+  -- ** Core types
   , GLXContext(..)
   , GLXPixmap
   , GLXDrawable
@@ -60,7 +63,7 @@ import Graphics.X11.Types
 import Graphics.X11.Xlib.Types
 import Graphics.X11.Xlib.VisualInfo
 
--- Not actual types, but useful for defining tokens
+-- Token types
 type GLXStringName = CInt
 type GLXErrorCode = CInt
 
@@ -78,7 +81,7 @@ type GLXRenderType = CInt
 type GLXPbufferClobberEventType = EventType
 type GLXPbufferClobberDrawableType = CInt
 
--- Types
+-- Core types
 newtype GLXContext = GLXContext (Ptr GLXContext)
   deriving (Eq, Show, Storable)
 type GLXDrawable = XID
