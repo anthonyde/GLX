@@ -51,6 +51,8 @@ library
     Graphics.X11.GLX.Raw.Core13
     Graphics.X11.GLX.Raw.Core13.Events
     Graphics.X11.GLX.Raw.Core13.Types
+    Graphics.X11.GLX.Raw.EXT
+    Graphics.X11.GLX.Raw.EXT.TextureFromPixmap
 
   other-modules:
     Graphics.X11.GLX.Raw.Extension
