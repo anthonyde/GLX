@@ -14,11 +14,11 @@ license:             BSD3
 license-file:        LICENSE
 author:              Anthony DeRossi
 maintainer:          Anthony DeRossi <ajderossi@gmail.com>
-copyright:           Copyright (c) 2012 Anthony DeRossi
+copyright:           Copyright (c) 2012, 2013 Anthony DeRossi
 category:            Graphics
 build-type:          Simple
 cabal-version:       >= 1.6
-tested-with:         GHC == 7.0.4
+tested-with:         GHC == 7.4.2
 
 source-repository head
   type:                git
@@ -41,6 +41,8 @@ library
   exposed-modules:
     Graphics.X11.GLX
     Graphics.X11.GLX.Raw
+    Graphics.X11.GLX.Raw.ARB
+    Graphics.X11.GLX.Raw.ARB.GetProcAddress
     Graphics.X11.GLX.Raw.Core13
     Graphics.X11.GLX.Raw.Core13.Events
     Graphics.X11.GLX.Raw.Core13.Types
